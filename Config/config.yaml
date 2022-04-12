@@ -1,0 +1,21 @@
+database:
+  type: mysql
+  ip: 127.0.0.1
+  port: 3306
+  name: TellerAndListenerSystem
+  username: root
+  password: 123456
+
+deployment:
+  ip: 127.0.0.1
+  port: 13876
+
+import:
+  gorm:
+    location: gorm.io/gorm
+    mysql:
+      location: gorm.io/driver/mysql
+  yaml:
+    location: gopkg.in/yaml.v2
+  gin:
+    location: github.com/gin-gonic/gin
