@@ -17,5 +17,5 @@ func RegisterRouter(r *gin.Engine) {
 	g.POST("/user/changeUserInfo", UserServiceController.UserServiceController{}.ChangeUserInfo)
 	g.POST("/user/register", UserServiceController.UserServiceController{}.RegisterUser)
 	g.POST("/user/addMoney", UserServiceController.UserServiceController{}.AddMoney)
-	g.POST("/user/getUserInfo", UserServiceController.UserServiceController{}.FindUserInfo)
+	g.GET("/user/getUserInfo", UserServiceController.UserServiceController{}.FindUserInfo)
 }
